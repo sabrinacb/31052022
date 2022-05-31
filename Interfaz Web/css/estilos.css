@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700;900&display=swap');
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 90%;
+    background-color: #F2F2F2;
+   
+ 
+    /*
+   background-color: rgb(242,242,242)
+   background-color: red;
+
+    */
+ 
+
+}
+
+h1 {
+    font-size: 4em;
+}
+
+/*  64px
+   medida base es 16px
+
+   64px * 100 / 16= 4em
+    
+
+
+*/
+h1, strong {
+    font-weight: 700;
+}
+
+/*selector grupal 
+afecta la regla de estilo a cuantos selectores estén en el grupo
+
+selector1, selector2, selector3 { propiedad:valor;}
+*/
+
+h1 strong {
+    font-family: 'Coiny', cursive;
+    font-size: 7.33rem;
+}
+
+/*
+rem = root em = toma la base y no duplica con el valor del padre
+
+que el strong q está adentro del h1 tiene esas características
+selector descendente padre hijo {afecta a ese hijo pero por encontrarse adentro de ese padre
+*/
+
+h2 {
+    font-weight: 400;
+    font-size: 1.66em;
+    background-color: rgba(252,238,33, 0.7);
+    
+    /*
+    background-color: #fcee21;*/
+
+
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 2.66em;
+}
+
+
+
+
+
+p {
+    font-size: 1.75em;
+}
+
+
+/* me refiero a todos los párrafos*/
+
+
+a { color: #333333;
+    text-decoration:none;
+
+
+}
+/*modifico el color de la tipografía de los vínculos*/
+
+
+
+#parrafo {
+    font-size: 2em;
+}
+
+/*
+#parrafo strong { background-color: yellow;}
+
+*/
+/*    
+Medidas absolutas (no varían según el medio, cm, mm, etc.)
+Medidas relativas (dependen del medio)
+
+-px => depende de la resolución de pantalla
+-em => proporcional
+
+-rem
+-ex
+-vh
+-vw
+
+*/
+
+
+/*breakpoints*/
+
+
+@media (max-width:768px) {
+
+    body {
+        font-size: 70%;
+    }
+
+    h1 strong {
+        font-size: 2em;
+    }
+}
